@@ -28,7 +28,7 @@ func FetchAllFoldersByOrgID(orgID uuid.UUID) ([]*Folder, error) {
 }
 
 // GetAllFolders retrieves all folders based on the given FetchFolderRequest.
-func GetAllFoldersOriginal(req *FetchFolderRequest) (*FetchFolderResponse, error) {
+/*func GetAllFoldersOriginal(req *FetchFolderRequest) (*FetchFolderResponse, error) {
 	var (
 		err error
 		_   = err
@@ -54,7 +54,7 @@ func GetAllFoldersOriginal(req *FetchFolderRequest) (*FetchFolderResponse, error
 	var ffr *FetchFolderResponse
 	ffr = &FetchFolderResponse{Folders: r} // Creates a new FetchFolderResponse struct with the fetched folders
 	return ffr, nil
-}
+}*/
 
 /* The Original GetAllFolders function retrieves the folders based on the provided requests organzation Id and
 then performs unnecessary variable initializations and conversions to ponter and back before finally
